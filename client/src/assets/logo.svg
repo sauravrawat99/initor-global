@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" fill="none">
+  <!-- Icon mark -->
+  <rect x="0" y="8" width="24" height="24" rx="4" fill="#C9A043"/>
+  <rect x="6" y="14" width="4" height="12" rx="1" fill="#0B1929"/>
+  <rect x="12" y="11" width="4" height="15" rx="1" fill="#0B1929"/>
+  <rect x="18" y="17" width="4" height="9" rx="1" fill="#0B1929"/>
+  <!-- Text -->
+  <text x="32" y="27" font-family="Playfair Display, Georgia, serif" font-size="18" font-weight="700" fill="#E8EDF4">INITOR</text>
+  <text x="32" y="38" font-family="DM Sans, sans-serif" font-size="9" font-weight="400" letter-spacing="3" fill="#C9A043">GLOBAL</text>
+</svg>

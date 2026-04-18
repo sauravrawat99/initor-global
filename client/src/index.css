@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy-950: #060D16;
+    --navy-900: #0B1929;
+    --navy-800: #102338;
+    --gold-400: #D4A847;
+    --gold-500: #C9A043;
+    --text-light: #E8EDF4;
+    --text-muted: #94A3B8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy-950 text-slate-100 font-body antialiased;
+    background-color: var(--navy-950);
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  ::selection {
+    background-color: var(--gold-500);
+    color: var(--navy-950);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--navy-900);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--gold-500);
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 px-6 md:px-12 lg:px-20;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .gold-text {
+    color: var(--gold-400);
+  }
+
+  .gold-border {
+    border-color: var(--gold-500);
+  }
+
+  .glass-card {
+    @apply bg-navy-800/60 backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gold divider */
+.gold-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #C9A043, #E8C97A);
+  border-radius: 2px;
+}
+
+/* Marquee pause on hover */
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
+}
